@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2260D48C28A36CA000F14031 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2260D48B28A36CA000F14031 /* Metal.framework */; };
+		3747FF4B2835BC8A00E646CC /* imgui.h in Headers */ = {isa = PBXBuildFile; fileRef = 3747FF3E2835BC8A00E646CC /* imgui.h */; };
+		3747FF4C2835BC8A00E646CC /* imstb_textedit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3747FF3F2835BC8A00E646CC /* imstb_textedit.h */; };
+		3747FF4D2835BC8A00E646CC /* imconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 3747FF402835BC8A00E646CC /* imconfig.h */; };
+		3747FF4E2835BC8A00E646CC /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3747FF412835BC8A00E646CC /* imgui_widgets.cpp */; };
+		3747FF4F2835BC8A00E646CC /* imstb_truetype.h in Headers */ = {isa = PBXBuildFile; fileRef = 3747FF422835BC8A00E646CC /* imstb_truetype.h */; };
+		3747FF502835BC8A00E646CC /* imgui_impl_metal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3747FF432835BC8A00E646CC /* imgui_impl_metal.mm */; };
+		3747FF512835BC8A00E646CC /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3747FF442835BC8A00E646CC /* imgui.cpp */; };
+		3747FF522835BC8A00E646CC /* imgui_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3747FF452835BC8A00E646CC /* imgui_internal.h */; };
+		3747FF532835BC8A00E646CC /* imgui_impl_metal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3747FF462835BC8A00E646CC /* imgui_impl_metal.h */; };
+		3747FF542835BC8A00E646CC /* imstb_rectpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3747FF472835BC8A00E646CC /* imstb_rectpack.h */; };
+		3747FF552835BC8A00E646CC /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3747FF482835BC8A00E646CC /* imgui_tables.cpp */; };
+		3747FF562835BC8A00E646CC /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3747FF492835BC8A00E646CC /* imgui_demo.cpp */; };
+		3747FF572835BC8A00E646CC /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3747FF4A2835BC8A00E646CC /* imgui_draw.cpp */; };
+		3787D00E2832D8BE00573A38 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3787D00C2832D8BD00573A38 /* ViewController.mm */; };
+		379363A22852AB0200D7B962 /* metalbiew.mm in Sources */ = {isa = PBXBuildFile; fileRef = 379363A12852AB0200D7B962 /* metalbiew.mm */; };
+		3796C2C528357BD600079C74 /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 3796C2C028357BD600079C74 /* Base64.h */; };
+		3796C2C628357BD600079C74 /* DragView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3796C2C128357BD600079C74 /* DragView.h */; };
+		3796C2C728357BD600079C74 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3796C2C228357BD600079C74 /* DragView.m */; };
+		3796C2CB28357C4A00079C74 /* JRMemory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3796C2CA28357C4A00079C74 /* JRMemory.framework */; };
+		3796C2CF28357DC600079C74 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3796C2CE28357DC600079C74 /* MetalKit.framework */; };
+		3796C2D3283592C100079C74 /* metalbiew.h in Headers */ = {isa = PBXBuildFile; fileRef = 3796C2D1283592C100079C74 /* metalbiew.h */; };
+		9748D00A2B9F23A700845324 /* baidu_font.h in Headers */ = {isa = PBXBuildFile; fileRef = 9748D0092B9F23A700845324 /* baidu_font.h */; };
+		97B9AB9B2BA47B0A007EC24C /* dobby.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B9AB992BA47B0A007EC24C /* dobby.h */; };
+		97B9AB9C2BA47B0A007EC24C /* libdobby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B9AB9A2BA47B0A007EC24C /* libdobby.a */; };
+		97D4455B2B98099300E5F4D3 /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D4455A2B98099300E5F4D3 /* ViewController.h */; };
+		97D4455D2B9C5FDD00E5F4D3 /* Font.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D4455C2B9C5FDD00E5F4D3 /* Font.h */; };
+		97D445612B9C6A0D00E5F4D3 /* memory_tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D445602B9C6A0D00E5F4D3 /* memory_tools.h */; };
+		97D445632B9C6A1200E5F4D3 /* memory_tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D445622B9C6A1200E5F4D3 /* memory_tools.cpp */; };
+		97D445682B9CC7A300E5F4D3 /* DrawData.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D445662B9CC7A300E5F4D3 /* DrawData.h */; };
+		97D445692B9CC7A300E5F4D3 /* DrawData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97D445672B9CC7A300E5F4D3 /* DrawData.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2260D48B28A36CA000F14031 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		3747FF3E2835BC8A00E646CC /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
+		3747FF3F2835BC8A00E646CC /* imstb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_textedit.h; sourceTree = "<group>"; };
+		3747FF402835BC8A00E646CC /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
+		3747FF412835BC8A00E646CC /* imgui_widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_widgets.cpp; sourceTree = "<group>"; };
+		3747FF422835BC8A00E646CC /* imstb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_truetype.h; sourceTree = "<group>"; };
+		3747FF432835BC8A00E646CC /* imgui_impl_metal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = imgui_impl_metal.mm; sourceTree = "<group>"; };
+		3747FF442835BC8A00E646CC /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui.cpp; sourceTree = "<group>"; };
+		3747FF452835BC8A00E646CC /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_internal.h; sourceTree = "<group>"; };
+		3747FF462835BC8A00E646CC /* imgui_impl_metal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_impl_metal.h; sourceTree = "<group>"; };
+		3747FF472835BC8A00E646CC /* imstb_rectpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_rectpack.h; sourceTree = "<group>"; };
+		3747FF482835BC8A00E646CC /* imgui_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_tables.cpp; sourceTree = "<group>"; };
+		3747FF492835BC8A00E646CC /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_demo.cpp; sourceTree = "<group>"; };
+		3747FF4A2835BC8A00E646CC /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		3787D0052832D21D00573A38 /* SkyDraw.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SkyDraw.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3787D00C2832D8BD00573A38 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		379363A12852AB0200D7B962 /* metalbiew.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = metalbiew.mm; sourceTree = "<group>"; };
+		3796C2C028357BD600079C74 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		3796C2C128357BD600079C74 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
+		3796C2C228357BD600079C74 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
+		3796C2CA28357C4A00079C74 /* JRMemory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JRMemory.framework; sourceTree = "<group>"; };
+		3796C2CE28357DC600079C74 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		3796C2D1283592C100079C74 /* metalbiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metalbiew.h; sourceTree = "<group>"; };
+		9748D0092B9F23A700845324 /* baidu_font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baidu_font.h; sourceTree = "<group>"; };
+		97B9AB992BA47B0A007EC24C /* dobby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dobby.h; sourceTree = "<group>"; };
+		97B9AB9A2BA47B0A007EC24C /* libdobby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdobby.a; sourceTree = "<group>"; };
+		97D4455A2B98099300E5F4D3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		97D4455C2B9C5FDD00E5F4D3 /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
+		97D445602B9C6A0D00E5F4D3 /* memory_tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_tools.h; sourceTree = "<group>"; };
+		97D445622B9C6A1200E5F4D3 /* memory_tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = memory_tools.cpp; sourceTree = "<group>"; };
+		97D445662B9CC7A300E5F4D3 /* DrawData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawData.h; sourceTree = "<group>"; };
+		97D445672B9CC7A300E5F4D3 /* DrawData.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DrawData.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3787D0032832D21D00573A38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B9AB9C2BA47B0A007EC24C /* libdobby.a in Frameworks */,
+				3796C2CB28357C4A00079C74 /* JRMemory.framework in Frameworks */,
+				2260D48C28A36CA000F14031 /* Metal.framework in Frameworks */,
+				3796C2CF28357DC600079C74 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3747FF3D2835BC8A00E646CC /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				3747FF3E2835BC8A00E646CC /* imgui.h */,
+				3747FF3F2835BC8A00E646CC /* imstb_textedit.h */,
+				3747FF402835BC8A00E646CC /* imconfig.h */,
+				3747FF412835BC8A00E646CC /* imgui_widgets.cpp */,
+				3747FF422835BC8A00E646CC /* imstb_truetype.h */,
+				3747FF432835BC8A00E646CC /* imgui_impl_metal.mm */,
+				3747FF442835BC8A00E646CC /* imgui.cpp */,
+				3747FF452835BC8A00E646CC /* imgui_internal.h */,
+				3747FF462835BC8A00E646CC /* imgui_impl_metal.h */,
+				3747FF472835BC8A00E646CC /* imstb_rectpack.h */,
+				3747FF482835BC8A00E646CC /* imgui_tables.cpp */,
+				3747FF492835BC8A00E646CC /* imgui_demo.cpp */,
+				3747FF4A2835BC8A00E646CC /* imgui_draw.cpp */,
+			);
+			path = imgui;
+			sourceTree = "<group>";
+		};
+		3787CFFC2832D21D00573A38 = {
+			isa = PBXGroup;
+			children = (
+				97B9AB982BA47B0A007EC24C /* dobby */,
+				97D445652B9CC78500E5F4D3 /* 绘制 */,
+				97D4455F2B9C6A0500E5F4D3 /* 内存读写 */,
+				3747FF3D2835BC8A00E646CC /* imgui */,
+				3796C2D1283592C100079C74 /* metalbiew.h */,
+				379363A12852AB0200D7B962 /* metalbiew.mm */,
+				97D4455C2B9C5FDD00E5F4D3 /* Font.h */,
+				9748D0092B9F23A700845324 /* baidu_font.h */,
+				3796C2BF28357BD600079C74 /* 图标 */,
+				97D4455A2B98099300E5F4D3 /* ViewController.h */,
+				3787D00C2832D8BD00573A38 /* ViewController.mm */,
+				3787D0062832D21D00573A38 /* Products */,
+				3796C2C928357C4A00079C74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3787D0062832D21D00573A38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3787D0052832D21D00573A38 /* SkyDraw.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3796C2BF28357BD600079C74 /* 图标 */ = {
+			isa = PBXGroup;
+			children = (
+				3796C2C028357BD600079C74 /* Base64.h */,
+				3796C2C128357BD600079C74 /* DragView.h */,
+				3796C2C228357BD600079C74 /* DragView.m */,
+			);
+			path = "图标";
+			sourceTree = "<group>";
+		};
+		3796C2C928357C4A00079C74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2260D48B28A36CA000F14031 /* Metal.framework */,
+				3796C2CE28357DC600079C74 /* MetalKit.framework */,
+				3796C2CA28357C4A00079C74 /* JRMemory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97B9AB982BA47B0A007EC24C /* dobby */ = {
+			isa = PBXGroup;
+			children = (
+				97B9AB992BA47B0A007EC24C /* dobby.h */,
+				97B9AB9A2BA47B0A007EC24C /* libdobby.a */,
+			);
+			path = dobby;
+			sourceTree = "<group>";
+		};
+		97D4455F2B9C6A0500E5F4D3 /* 内存读写 */ = {
+			isa = PBXGroup;
+			children = (
+				97D445602B9C6A0D00E5F4D3 /* memory_tools.h */,
+				97D445622B9C6A1200E5F4D3 /* memory_tools.cpp */,
+			);
+			path = "内存读写";
+			sourceTree = "<group>";
+		};
+		97D445652B9CC78500E5F4D3 /* 绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				97D445662B9CC7A300E5F4D3 /* DrawData.h */,
+				97D445672B9CC7A300E5F4D3 /* DrawData.mm */,
+			);
+			path = "绘制";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3787D0012832D21D00573A38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9748D00A2B9F23A700845324 /* baidu_font.h in Headers */,
+				3747FF4B2835BC8A00E646CC /* imgui.h in Headers */,
+				3747FF542835BC8A00E646CC /* imstb_rectpack.h in Headers */,
+				97D445682B9CC7A300E5F4D3 /* DrawData.h in Headers */,
+				3796C2C628357BD600079C74 /* DragView.h in Headers */,
+				97D4455D2B9C5FDD00E5F4D3 /* Font.h in Headers */,
+				97D445612B9C6A0D00E5F4D3 /* memory_tools.h in Headers */,
+				3747FF4C2835BC8A00E646CC /* imstb_textedit.h in Headers */,
+				3747FF4D2835BC8A00E646CC /* imconfig.h in Headers */,
+				3747FF532835BC8A00E646CC /* imgui_impl_metal.h in Headers */,
+				3796C2D3283592C100079C74 /* metalbiew.h in Headers */,
+				3796C2C528357BD600079C74 /* Base64.h in Headers */,
+				3747FF4F2835BC8A00E646CC /* imstb_truetype.h in Headers */,
+				97B9AB9B2BA47B0A007EC24C /* dobby.h in Headers */,
+				3747FF522835BC8A00E646CC /* imgui_internal.h in Headers */,
+				97D4455B2B98099300E5F4D3 /* ViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3787D0042832D21D00573A38 /* SkyDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3787D0092832D21D00573A38 /* Build configuration list for PBXNativeTarget "SkyDraw" */;
+			buildPhases = (
+				3787D0012832D21D00573A38 /* Headers */,
+				3787D0022832D21D00573A38 /* Sources */,
+				3787D0032832D21D00573A38 /* Frameworks */,
+				97D445642B9CC72A00E5F4D3 /* ShellScript */,
+				9768A63C2BA72C5C00A0B6A4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyDraw;
+			productName = Menus;
+			productReference = 3787D0052832D21D00573A38 /* SkyDraw.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3787CFFD2832D21D00573A38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3787D0042832D21D00573A38 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3787D0002832D21D00573A38 /* Build configuration list for PBXProject "SkyDraw" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3787CFFC2832D21D00573A38;
+			productRefGroup = 3787D0062832D21D00573A38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3787D0042832D21D00573A38 /* SkyDraw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9768A63C2BA72C5C00A0B6A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		97D445642B9CC72A00E5F4D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3787D0022832D21D00573A38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D445632B9C6A1200E5F4D3 /* memory_tools.cpp in Sources */,
+				3796C2C728357BD600079C74 /* DragView.m in Sources */,
+				3747FF502835BC8A00E646CC /* imgui_impl_metal.mm in Sources */,
+				97D445692B9CC7A300E5F4D3 /* DrawData.mm in Sources */,
+				3747FF572835BC8A00E646CC /* imgui_draw.cpp in Sources */,
+				3787D00E2832D8BE00573A38 /* ViewController.mm in Sources */,
+				3747FF4E2835BC8A00E646CC /* imgui_widgets.cpp in Sources */,
+				379363A22852AB0200D7B962 /* metalbiew.mm in Sources */,
+				3747FF552835BC8A00E646CC /* imgui_tables.cpp in Sources */,
+				3747FF562835BC8A00E646CC /* imgui_demo.cpp in Sources */,
+				3747FF512835BC8A00E646CC /* imgui.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3787D0072832D21D00573A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3787D0082832D21D00573A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		3787D00A2832D21D00573A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2FJN5HKB6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INSTALL_PATH = /var/jb/usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dobby",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3787D00B2832D21D00573A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2FJN5HKB6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INSTALL_PATH = /var/jb/usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dobby",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3787D0002832D21D00573A38 /* Build configuration list for PBXProject "SkyDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3787D0072832D21D00573A38 /* Debug */,
+				3787D0082832D21D00573A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3787D0092832D21D00573A38 /* Build configuration list for PBXNativeTarget "SkyDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3787D00A2832D21D00573A38 /* Debug */,
+				3787D00B2832D21D00573A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3787CFFD2832D21D00573A38 /* Project object */;
+}
